@@ -1,0 +1,23 @@
+.card-box {
+  margin: 3%;
+  width: 330px;
+  border: 1px solid lightgrey;
+}
+.horizontal-line {
+  border: 1px solid #dadee2;
+}
+
+.text-color-details {
+  color: #46555f;
+}
+
+.other-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  padding: 2% 2% 2% 17%;
+}
+.vertical-line {
+  border-left: 1px solid #dadee2;
+  height: 40px;
+}
