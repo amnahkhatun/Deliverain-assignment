@@ -10,46 +10,18 @@ import {
   Legend
 } from "recharts";
 
-const data = [
-  {
-    name: " A",
-    uv: 1
-  },
-  {
-    name: " B",
-    uv: 7
-  },
-  {
-    name: " C",
-    uv: 3
-  },
-  {
-    name: " D",
-    uv: 5
-  },
-  {
-    name: "E",
-    uv: 4
-  },
-  {
-    name: "F",
-    uv: 6
-  },
-  {
-    name: "G",
-    uv: 2
-  }
-];
+import data from "../data";
 
 export default class Example extends PureComponent {
   static jsfiddleUrl = "https://jsfiddle.net/alidingling/30763kr7/";
 
   render() {
+    const data1 = this.props.barChart;
     return (
       <BarChart
         width={300}
         height={100}
-        data={data}
+        data={data1}
         margin={{
           top: 5,
           right: 30,

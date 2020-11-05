@@ -9,7 +9,13 @@ export default function index(props) {
           <div style={{ color: props.mainPrimaryColor }}>Quality</div>
           <div>80</div>
         </div>
-        <CircularProgress variant="static" color="secondary" value={75} />
+        <CircularProgress
+          variant="static"
+          color="secondary"
+          value={75}
+          size={30}
+          style={{ padding: "6px 4px 2px 5px" }}
+        />
       </div>
       <div className="vertical-line"></div>
       <div>

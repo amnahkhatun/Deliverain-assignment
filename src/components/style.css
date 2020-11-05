@@ -2,6 +2,7 @@
   margin: 3%;
   width: 330px;
   border: 1px solid lightgrey;
+  display: inline-block;
 }
 .horizontal-line {
   border: 1px solid #dadee2;

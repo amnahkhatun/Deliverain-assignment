@@ -12,6 +12,8 @@ import {
   deepOrange
 } from "@material-ui/core/colors";
 
+import data from "../data";
+
 const useStyles = makeStyles(theme => ({}));
 
 export default function Index() {
@@ -23,10 +25,10 @@ export default function Index() {
   const darkTheme = createMuiTheme({
     palette: {
       type: palletType,
-      primary: {
+      primaryText: {
         main: mainPrimaryColor
       },
-      secondary: {
+      secondaryText: {
         main: mainSecondaryColor
       }
     }
@@ -36,11 +38,18 @@ export default function Index() {
     setDarkState(!darkState);
   };
   return (
-    <MuiThemeProvider theme={darkTheme}>
-      <div className="card-box">
-        <Switch checked={darkState} onChange={handleThemeChange} />
-        <Card mainPrimaryColor={mainPrimaryColor} />
-      </div>
-    </MuiThemeProvider>
+    <>
+      <MuiThemeProvider theme={darkTheme}>
+        <div>
+          <Switch checked={darkState} onChange={handleThemeChange} />
+        </div>
+
+        {data.map(item => (
+          <div className="card-box">
+            <Card mainPrimaryColor={mainPrimaryColor} users={item} />
+          </div>
+        ))}
+      </MuiThemeProvider>
+    </>
   );
 }

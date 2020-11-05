@@ -29,27 +29,34 @@ const useStyles = makeStyles({
 
 export default function SimpleCard(props) {
   const classes = useStyles();
-  console.log(data, "data");
+  let barChart = props.users.moreInformation["barChart"];
+  let lineChart = props.users.moreInformation["lineChart"];
   return (
     <Card className={classes.root}>
       <CardContent>
         <div style={{ display: "flex" }}>
           <Avatar src={John}></Avatar>
           <div style={{ display: "grid", marginLeft: "10px" }}>
-            <span style={{ fontSize: "x-large" }}>{data[0].name}</span>
+            <span style={{ fontSize: "x-large" }}>{props.users.name}</span>
             <span style={{ color: props.mainPrimaryColor }}>
-              {data[0].location}
+              {props.users.location}
             </span>
           </div>
         </div>
 
         <OtherDetails mainPrimaryColor={props.mainPrimaryColor} />
         <hr className="horizontal-line"></hr>
-        <div>Latest Activity : 68(-4), The Shire UK</div>
+        <BarChartContainer barChart={barChart} />
         <hr className="horizontal-line"></hr>
-        <BarChartContainer />
+        <div>
+          <span style={{ color: props.mainPrimaryColor }}>
+            Latest Activity :{" "}
+          </span>
+          <span>68(-4), The Shire UK</span>
+        </div>
         <hr className="horizontal-line"></hr>
-        <LinChartContainer />
+
+        <LinChartContainer lineChart={lineChart} />
       </CardContent>
     </Card>
   );

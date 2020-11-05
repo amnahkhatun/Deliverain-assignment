@@ -8,39 +8,10 @@ import {
   Tooltip
 } from "recharts";
 
-const data = [
-  {
-    name: "A",
-    uv: 4000
-  },
-  {
-    name: "B",
-    uv: 3000
-  },
-  {
-    name: "C",
-    uv: 2000
-  },
-  {
-    name: "D",
-    uv: 2780
-  },
-  {
-    name: "E",
-    uv: 1890
-  },
-  {
-    name: "F",
-    uv: 2390
-  },
-  {
-    name: "G",
-    uv: 3490
-  }
-];
-
 export default class Example extends PureComponent {
   render() {
+    let data = this.props.lineChart;
+
     return (
       <AreaChart
         width={300}
