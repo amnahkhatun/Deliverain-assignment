@@ -6,8 +6,10 @@ export default function index(props) {
     <div className="other-details">
       <div style={{ display: "flex" }}>
         <div>
-          <div style={{ color: props.mainPrimaryColor }}>Quality</div>
-          <div>80</div>
+          <div style={{ color: props.mainPrimaryColor }}>
+            {Object.keys(props.otherDetails)[0]}
+          </div>
+          <div>{Object.values(props.otherDetails)[0]}</div>
         </div>
         <CircularProgress
           variant="static"
@@ -19,13 +21,17 @@ export default function index(props) {
       </div>
       <div className="vertical-line"></div>
       <div>
-        <div style={{ color: props.mainPrimaryColor }}>Handicap</div>
-        <div>PRO</div>
+        <div style={{ color: props.mainPrimaryColor }}>
+          {Object.keys(props.otherDetails)[1]}
+        </div>
+        <div>{Object.values(props.otherDetails)[1]}</div>
       </div>
       <div className="vertical-line"></div>
       <div>
-        <div style={{ color: props.mainPrimaryColor }}>SG TOTAL</div>
-        <div>4.14</div>
+        <div style={{ color: props.mainPrimaryColor }}>
+          {Object.keys(props.otherDetails)[2]}
+        </div>
+        <div>{Object.values(props.otherDetails)[2]}</div>
       </div>
     </div>
   );

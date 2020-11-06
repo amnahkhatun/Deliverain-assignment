@@ -8,7 +8,6 @@ import LinChartContainer from "../charts/LineChartContainer";
 import BarChartContainer from "../charts/BarChartContainer";
 import OtherDetails from "./otherDetails";
 import John from "../images/john-doe.jpg";
-import data from "../data";
 
 const useStyles = makeStyles({
   root: {
@@ -26,11 +25,19 @@ const useStyles = makeStyles({
     marginBottom: 12
   }
 });
-
+// Download PNG
+// let handleSaveClick = () => {
+//   domtoimage
+//     .toBlob(document.getElementById("node-to-convert"))
+//     .then(function(blob) {
+//       fileDownload(blob, "dom-to-image.png");
+//     });
+// };
 export default function SimpleCard(props) {
   const classes = useStyles();
   let barChart = props.users.moreInformation["barChart"];
   let lineChart = props.users.moreInformation["lineChart"];
+  const otherDetails = props.users.otherDetails;
   return (
     <Card className={classes.root}>
       <CardContent>
@@ -44,7 +51,10 @@ export default function SimpleCard(props) {
           </div>
         </div>
 
-        <OtherDetails mainPrimaryColor={props.mainPrimaryColor} />
+        <OtherDetails
+          mainPrimaryColor={props.mainPrimaryColor}
+          otherDetails={otherDetails}
+        />
         <hr className="horizontal-line"></hr>
         <BarChartContainer barChart={barChart} />
         <hr className="horizontal-line"></hr>
@@ -55,8 +65,13 @@ export default function SimpleCard(props) {
           <span>68(-4), The Shire UK</span>
         </div>
         <hr className="horizontal-line"></hr>
+        <div id="node-to-convert">
+          <LinChartContainer lineChart={lineChart} />
+        </div>
 
-        <LinChartContainer lineChart={lineChart} />
+        {/* <button onClick={handleSaveClick} className="download-button">
+          Download PNG
+        </button> */}
       </CardContent>
     </Card>
   );

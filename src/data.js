@@ -1,9 +1,9 @@
 const data = [
   {
-    name: "John Doe",
+    name: "David Ford",
     image:
       "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpinotmasters.sk%2Fspeaker%2Fjohn-doe%2F&psig=AOvVaw3J9-lzeb00thyBNH3j_dzP&ust=1604502951108000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCvjLbV5uwCFQAAAAAdAAAAABAD",
-    location: "Bengaluru, Karnataka",
+    location: "Rye Golf club, UK",
     otherDetails: {
       Quality: "80",
       Handicap: "PRO",
@@ -73,14 +73,14 @@ const data = [
     }
   },
   {
-    name: "John Doe1",
+    name: "MS Dhoni",
     image:
       "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpinotmasters.sk%2Fspeaker%2Fjohn-doe%2F&psig=AOvVaw3J9-lzeb00thyBNH3j_dzP&ust=1604502951108000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCvjLbV5uwCFQAAAAAdAAAAABAD",
-    location: "Bengaluru, Karnataka",
+    location: "Pune, Maharashtra",
     otherDetails: {
-      Quality: "80",
+      Quality: "100",
       Handicap: "PRO",
-      "SG TOTAL": "4.14"
+      "SG TOTAL": "5.14"
     },
     moreInformation: {
       barChart: [
@@ -146,14 +146,14 @@ const data = [
     }
   },
   {
-    name: "John Doe2",
+    name: "Rohit Sharma",
     image:
       "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpinotmasters.sk%2Fspeaker%2Fjohn-doe%2F&psig=AOvVaw3J9-lzeb00thyBNH3j_dzP&ust=1604502951108000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCvjLbV5uwCFQAAAAAdAAAAABAD",
     location: "Bengaluru, Karnataka",
     otherDetails: {
-      Quality: "80",
+      Quality: "120",
       Handicap: "PRO",
-      "SG TOTAL": "4.14"
+      "SG TOTAL": "6.14"
     },
     moreInformation: {
       barChart: [
@@ -219,14 +219,14 @@ const data = [
     }
   },
   {
-    name: "John Doe3",
+    name: "Virat Kohli",
     image:
       "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpinotmasters.sk%2Fspeaker%2Fjohn-doe%2F&psig=AOvVaw3J9-lzeb00thyBNH3j_dzP&ust=1604502951108000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJCvjLbV5uwCFQAAAAAdAAAAABAD",
-    location: "Bengaluru, Karnataka",
+    location: "Mumbai, Maharashtra",
     otherDetails: {
-      Quality: "80",
+      Quality: "140",
       Handicap: "PRO",
-      "SG TOTAL": "4.14"
+      "SG TOTAL": "7.14"
     },
     moreInformation: {
       barChart: [
